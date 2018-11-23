@@ -4,9 +4,18 @@ var btn = document.getElementById('submitBtn');
 btn.addEventListener('click', () => {
 	var list = document.getElementsByTagName('ul')[0];
 	var listItem = document.createElement('li');
-	var deleteBtn = document.createElement('span').innerHTML = '&times';
-	deleteBtn.className = "span";
-	listItem.innerHTML = input.value + deleteBtn;
+	var dBtn = document.createElement('button');
+	listItem.innerHTML = input.value;
+	dBtn.appendChild(document.createTextNode("X"));
 	list.appendChild(listItem);
+	listItem.appendChild(dBtn);
 	input.value = ' ';
+	dBtn.addEventListener('click', () => {
+		listItem.remove();
+	})
+	listItem.addEventListener('click', () => {
+		listItem.style.backgroundColor = 'green';	
+	})
 })
+
+

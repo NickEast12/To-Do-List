@@ -46,7 +46,7 @@ header {
     border-radius: 5px;
 	
 }
-.input-wrapper button {
+#submitBtn {
     border: none;
     cursor: pointer;
     background: #e1000c;
@@ -78,12 +78,17 @@ header {
 	font-weight: 700;
 	text-transform: capitalize;
 }
-.span {
-	font-size: 30px;
-	font-weight: 500;
+ul li button{
+	font-size: 24px;
+	font-family: open sans; 
+	font-weight: 600;
 	position: absolute;
-	top: 10.3px;
-	right: 30px;
+	top: 14px;
+	right: 30px; 
+	background: none; 
+	color: white;
+	border: none;
+	cursor: pointer;
 }
 span {
 	font-size: 30px;
