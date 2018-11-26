@@ -8,10 +8,6 @@ btn.addEventListener('click', () => {
 	var dBtn = document.createElement('button');
 	// gathering input from the text field and adding it to the li
 	listItem.innerHTML = input.value;
-	if (listItem > '0') {
-		listItem.style.display = 'none';
-		
-		}
 	// appending on the X to the button and then the Li to the Ul 
 	dBtn.appendChild(document.createTextNode("X"));
 	list.appendChild(listItem);
@@ -26,6 +22,8 @@ btn.addEventListener('click', () => {
 	listItem.addEventListener('click', () => {
 		listItem.style.backgroundColor = 'green';	
 	})
+	
 })
 
 
+// #008E8E #66BBBB
